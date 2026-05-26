@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bone: #F5EFE0;
+  --coal: #000000;
+  --ember: #FF9E1B;
+}
+
+html, body {
+  background: var(--bone);
+  color: var(--coal);
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--ember);
+  color: var(--coal);
+}
+
+.logo-mark {
+  font-family: var(--font-display), "Bowlby One", Impact, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 0.9;
+}
+
+.font-display {
+  font-family: var(--font-display), "Bowlby One", Impact, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.marquee {
+  display: flex;
+  gap: 3rem;
+  animation: marquee 32s linear infinite;
+  will-change: transform;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+  animation: spin-slow 18s linear infinite;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-8deg); }
+  50% { transform: rotate(8deg); }
+}
+.animate-wiggle {
+  animation: wiggle 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+/* Sun-burst badge — symmetric 12-point star */
+.burst {
+  clip-path: polygon(
+    50% 0%, 59.83% 13.30%, 75% 6.70%, 76.87% 23.13%, 93.30% 25%, 86.71% 40.16%,
+    100% 50%, 86.71% 59.83%, 93.30% 75%, 76.87% 76.87%, 75% 93.30%, 59.83% 86.70%,
+    50% 100%, 40.16% 86.70%, 25% 93.30%, 23.13% 76.87%, 6.70% 75%, 13.29% 59.83%,
+    0% 50%, 13.29% 40.16%, 6.70% 25%, 23.13% 23.13%, 25% 6.70%, 40.16% 13.30%
+  );
+}
