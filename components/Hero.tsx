@@ -11,7 +11,7 @@ export default function Hero() {
           initial={{ scale: 0, rotate: -40 }}
           animate={{ scale: 1, rotate: -15 }}
           transition={{ delay: 0.4, type: "spring", stiffness: 120, damping: 12 }}
-          className="absolute left-2 md:left-10 top-4 md:top-10 z-10 animate-float"
+          className="hidden md:block absolute left-2 md:left-10 top-4 md:top-10 z-10 animate-float"
         >
           <Burst size={120}>
             ORDER<br />NOW

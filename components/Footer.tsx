@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="bg-ember text-coal px-6 md:px-10 pt-16 pb-8">
       <div className="max-w-[1400px] mx-auto">
-        <div className="logo-mark text-center text-[24vw] md:text-[20rem] leading-[0.85] text-coal">
+        <div className="logo-mark text-center leading-[0.85] text-coal whitespace-nowrap" style={{ fontSize: "clamp(4rem, 22vw, 20rem)" }}>
           MOZY&rsquo;S
         </div>
 
