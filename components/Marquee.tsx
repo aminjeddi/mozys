@@ -10,7 +10,7 @@ const items = [
 ];
 
 export default function Marquee() {
-  const row = [...items, ...items, ...items];
+  const row = [...items, ...items];
   return (
     <section className="bg-ember text-coal py-5 overflow-hidden">
       <div className="marquee whitespace-nowrap">

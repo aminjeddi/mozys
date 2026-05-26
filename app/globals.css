@@ -35,9 +35,13 @@ html, body {
 
 .marquee {
   display: flex;
-  gap: 3rem;
   animation: marquee 18s linear infinite;
   will-change: transform;
+}
+
+.marquee > * {
+  padding-right: 3rem;
+  flex-shrink: 0;
 }
 
 @media (max-width: 768px) {
