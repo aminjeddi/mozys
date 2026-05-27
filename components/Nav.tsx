@@ -91,7 +91,6 @@ export default function Nav() {
               <a
                 href="#visit"
                 onClick={() => setOpen(false)}
-                className="mt-2 inline-flex w-fit rounded-full border-2 border-ember px-5 py-3"
               >
                 VISIT US
               </a>
