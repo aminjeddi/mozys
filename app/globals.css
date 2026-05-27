@@ -45,7 +45,7 @@ html, body {
 
 @media (max-width: 768px) {
   .marquee {
-    animation-duration: 8s;
+    animation-duration: 12s;
   }
 }
 
